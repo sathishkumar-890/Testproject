@@ -1,0 +1,85 @@
+{% extends 'welcomeapp/home.html' %}
+{% load static %}
+
+{% block body_block %}
+
+
+<div class="regmain">
+
+    {% if registered %}
+    <h1>Thank you for registering!</h1>
+    {% else %}
+    <div class="container">
+
+        <h1>Register herE</h1>
+        <form enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+
+            <div class="regun">
+                <table class="t1">
+                    <tr>
+                        <td><lable class="">Username:</lable></td>
+                        <td class="">{{userform.username}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="regfn">
+                <table class="t2">
+                    <tr>
+                        <td><lable class="">Firstname:</lable></td>
+                        <td class="">{{userform.first_name}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="regpw">
+                <table class="t3">
+                    <tr>
+                        <td><lable class="">Password:</lable></td>
+                        <td class="">{{userform.password}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="regrpw">
+                <table class="t4">
+                    <tr>
+                        <td><lable class="">Repeat password:</lable></td>
+                        <td class="">{{userform.repeat_password}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="regem">
+                <table class="t5">
+                    <tr>
+                        <td><lable class="">Email:</lable></td>
+                        <td class="">{{userinfo.email}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="regmn">
+                <table class="t6">
+                    <tr>
+                        <td><lable class="">Mobile No:</lable></td>
+                        <td class="">{{userinfo.mobile_number}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="signbn">
+                <input class="btn btn-success" type="submit" value="Sign Up">
+                <div class="smallbn">
+                    <small>If You Already Registered <a href="{% url 'login' %}">login</a></small>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

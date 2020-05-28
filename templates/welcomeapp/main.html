@@ -1,0 +1,125 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+
+    <link href="{% static 'css/navbar-top-fixed.css' %}" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+
+    <script type="text/javascript" src="{% static 'js/bootstrap/bootstrap.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+<!--    <script src="https://cdn.jwplayer.com/libraries/1VcpvWfZ.js"></script>-->
+
+
+</head>
+<body>
+
+
+<div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+        <a class="navbar-brand" href="{% url 'welcomeapp:mainpage' %}">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'welcomeapp:feedback' %}">FeedBack</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+
+{% block body_block %}
+
+<style media="screen">
+      video{
+        position: relative;
+        max-width: 100%;
+        width: 640px;
+        top: 0;
+        height: auto;
+      }
+    </style>
+
+
+<div class="">
+    <video id="players" controls="controls" ></video>
+
+</div>
+
+<div class="content">
+
+    <div id="channel_list" class="">
+        <table>
+
+            <input class="channel" type="submit" name="mksix" value="Mksix">
+            <input class="channel" type="submit" name="mktv" value="Mktv">
+            <input class="channel" type="submit" name="sirippoli" value="Sirippoli">
+            <input class="channel" type="submit" name="krishna" value="Krishna Tv">
+            <input class="channel" type="submit" name="ragam" value="Ragam Tv">
+            <input class="channel" type="submit" name="ee" value="EE Tv">
+            <input class="channel" type="submit" name="comedy" value="Comedy">
+            <input class="channel" type="submit" name="jsptv" value="Jsp TV">
+            <input class="channel" type="submit" name="agaram_mix" value="Agaram mix">
+            <input class="channel" type="submit" name="agaram_tv" value="Agaram Tv">
+
+        </table>
+
+
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}
+
+</body>
+
+<script type="text/javascript" src="{% static 'js/player.js' %}"></script>
+</html>

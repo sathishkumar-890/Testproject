@@ -1,0 +1,125 @@
+#loginfm{
+
+
+#border:solid 2px orange;
+}
+#loginfn{
+text-align:center;
+#border:solid 2px orange;
+}
+.username{
+margin-top:10px;
+#border:solid 2px orange;
+}
+
+.password{
+margin-top:10px;
+margin-right:-5px;
+#border:solid 2px orange;
+}
+.loginb{
+margin-top:10px;
+margin-right:30px;
+#border:solid 2px orange;
+}
+
+
+.regmain{
+margin-top:55px;
+text-align:left;
+#border:solid 2px orange
+}
+
+.regun{
+margin-top:10px;
+#border:solid 2px orange;
+}
+
+
+.t1{
+margin-left:49px;
+}
+
+
+.regfn{
+margin-top:10px;
+#border:solid 2px orange;
+}
+
+.t2{
+margin-left:51px;
+}
+
+.regpw{
+margin-top:10px;
+#border:solid 2px orange;
+}
+
+.t3{
+margin-left:54px;
+}
+
+
+.regrpw{
+margin-top:10px;
+#border:solid 2px orange;
+}
+
+.regem{
+margin-top:10px;
+#border:solid 2px orange;
+}
+
+.t5{
+margin-left:82px;
+}
+
+
+.regmn{
+margin-top:10px;
+#border:solid 2px orange;
+}
+
+.t6{
+margin-left:45px;
+}
+
+.signbn{
+margin-top:10px;
+margin-left:130px;
+#border:solid;
+}
+
+.smallbn{
+margin-top:20px;
+}
+
+.content{
+#border:solid;
+margin-top:10px;
+margin-left:5px;
+}
+
+.channel{
+
+width:100px;
+height:100px;
+margin-top: 10px;
+margin-left: 5px;
+margin-bottom: 5px;
+
+padding-top:70px;
+}
+
+#players{
+background-color: black;
+margin-top:5px;
+margin-left: 5px;
+width: 640px;
+height: 360px;
+
+}
+
+
+
+
