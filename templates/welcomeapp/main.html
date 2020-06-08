@@ -6,6 +6,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/owl.png' %}">
+
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -48,7 +50,7 @@
 
 
 </head>
-<body>
+<body class="mainbody">
 
 
 <div>
@@ -75,10 +77,10 @@
 
 {% block body_block %}
 
-<style media="screen">
+    <style media="screen">
       video{
         position: relative;
-        max-width: 100%;
+        max-width: 98%;
         width: 640px;
         top: 0;
         height: auto;
@@ -86,8 +88,8 @@
     </style>
 
 
-<div class="">
-    <video id="players" controls="controls" ></video>
+<div class="vv">
+    <video id="players" poster="{% static 'images/road.jpg' %}" controls></video>
 
 </div>
 
@@ -95,21 +97,33 @@
 
     <div id="channel_list" class="">
         <table>
-
-            <input class="channel" type="submit" name="mksix" value="Mksix">
-            <input class="channel" type="submit" name="mktv" value="Mktv">
-            <input class="channel" type="submit" name="sirippoli" value="Sirippoli">
-            <input class="channel" type="submit" name="krishna" value="Krishna Tv">
-            <input class="channel" type="submit" name="ragam" value="Ragam Tv">
-            <input class="channel" type="submit" name="ee" value="EE Tv">
-            <input class="channel" type="submit" name="comedy" value="Comedy">
-            <input class="channel" type="submit" name="jsptv" value="Jsp TV">
-            <input class="channel" type="submit" name="agaram_mix" value="Agaram mix">
-            <input class="channel" type="submit" name="agaram_tv" value="Agaram Tv">
+            <input class="channel" type="image" name="mksix" src="{% static 'css/images/mksix.png' %}">
+            <input class="channel" type="image" name="mktv" src="{% static 'css/images/mk tv.jpg' %}">
+            <input class="channel" type="image" name="mktunes" src="{% static 'css/images/mk tunes.jpg' %}">
+            <input class="channel" type="image" name="pudhuyugam" src="{% static 'css/images/Puduyugam.jpg' %}">
+            <input class="channel" type="image" name="vasanth" src="{% static 'css/images/vasanth.jpg' %}">
+            <input class="channel" type="image" name="murasu" src="{% static 'css/images/murasu.jpg' %}">
+            <input class="channel" type="image" name="kalaignar" src="{% static 'css/images/kalaignar tv.png' %}">
+            <input class="channel" type="image" name="sirippoli" src="{% static 'css/images/Sirippoli_tv.jpg' %}">
+            <input class="channel" type="image" name="discovery_tamil" src="{% static 'css/images/discovery tamil.gif' %}">
+            <input class="channel" type="image" name="eet" src="{% static 'css/images/eet tv.png' %}">
+            <input class="channel" type="image" name="vadhanam_tv" src="{% static 'css/images/vadhanam tv.png' %}">
+            <input class="channel" type="image" name="comedy" src="{% static 'css/images/akaram kalatta.png' %}">
+            <input class="channel" type="image" name="agaram_tv" src="{% static 'css/images/akaramtv.png' %}">
+            <input class="channel" type="image" name="agaram_mix" src="{% static 'css/images/akaram mix.png' %}">
+            <input class="channel" type="image" name="krishna" src="{% static 'css/images/krishna tv.png' %}">
+            <input class="channel" type="image" name="ragam" src="{% static 'css/images/ragam.jpg' %}">
+            <input class="channel" type="image" name="jcv_tv" src="{% static 'css/images/jcv tv.jpg' %}">
+            <input class="channel" type="image" name="vidiyal_tv" src="{% static 'css/images/vidiyal tv.jpg' %}">
+            <input class="channel" type="image" name="aara_tv" src="{% static 'css/images/aara tv.png' %}">
+            <input class="channel" type="image" name="aasai_tv" src="{% static 'css/images/aasai tv.png' %}">
+            <input class="channel" type="image" name="anbu_tv" src="{% static 'css/images/anbu1.jpg' %}">
+            <input class="channel" type="image" name="csk_tv" src="{% static 'css/images/csk tv.png' %}">
+            <input class="channel" type="image" name="jsptv" src="{% static 'css/images/jsp tv.png' %}">
+            <input class="channel" type="image" name="suriya_tv" src="{% static 'css/images/suriya tv.png' %}">
+            <input class="channel" type="image" name="bama_tv" src="{% static 'css/images/bama tv.png' %}">
 
         </table>
-
-
 
     </div>
 

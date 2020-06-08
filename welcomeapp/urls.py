@@ -8,6 +8,6 @@ urlpatterns = [
 
 
     path('content_page/',views.content_page,name='mainpage'),
-    path('fedback/',views.feedback,name='feedback'),
+    path('feedback/',views.feedback,name='feedback'),
 
 ]

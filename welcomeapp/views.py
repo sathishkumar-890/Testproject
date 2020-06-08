@@ -12,6 +12,9 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+def feedbacks(request):
+    return render(request,'welcomeapp/feedbacks.html')
+
 @login_required()
 def feedback(request):
     return render(request,'welcomeapp/feedback.html')
@@ -55,6 +58,7 @@ def signup(request):
 
         else:
             print(userform.errors,userinfo.errors)
+            
 
     else:
         userform = register_form()
