@@ -1,9 +1,13 @@
 .homebody{
 background-image: url("images/white.jpg");
+min-height: 50rem;
+padding-top: 4.5rem;
 
 }
 .mainbody{
 background-image: url("images/tree.jpg");
+min-height: 50rem;
+padding-top: 4.5rem;
 
 }
 
