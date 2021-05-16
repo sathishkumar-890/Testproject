@@ -28,6 +28,7 @@ var streams = {
   bama_tv:"http://livematrix.in:1935/bamahd/bamahd/playlist.m3u8",
   anbu_tv:"http://livestream.5centscdn.com/cinthamani/159b134a543fa8f70b3e0eff376e820c.sdp/index.m3u8",
   csk_tv:"http://185.105.4.244:1935/livesp/csktv1/playlist.m3u8",
+  three_tamil:"https://6n3yogbnd9ok-hls-live.5centscdn.com/threetamil/d0dbe915091d400bd8ee7f27f0791303.sdp/index.m3u8",
 
 };
 
